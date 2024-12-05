@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outphish</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css"> <!-- Modification ici -->
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <img src="/static/css/logo.png" alt="Logo" class="logo"> <!-- Modification ici -->
+            Outphish
+        </h1>
+        <form id="emailForm">
+            <!-- From Field -->
+            <div class="input-row">
+                <div class="label">De</div>
+                <input type="text" id="sender" placeholder="" required>
+            </div>
+
+            <!-- Subject Field -->
+            <div class="input-row">
+                <div class="label">Objet</div>
+                <input type="text" id="subject" placeholder="" required>
+            </div>
+
+            <!-- Body Field -->
+            <div class="input-row">
+                <textarea id="body" placeholder="Ajoutez un message" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Envoyer</button>
+
+            <div class="image-placeholder">
+                <img src="/static/css/icons.png" alt="Image description"> <!-- Modification ici -->
+            </div>
+
+        </form>
+
+        <div class="results" id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Connexion du fichier JavaScript -->
+    <script src="/static/js/main.js"></script> <!-- Modification ici -->
+</body>
+</html>

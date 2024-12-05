@@ -1,0 +1,232 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif; /* Assurez-vous que la police est appliquée à tout le texte */
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+}
+
+input, textarea, label, button {
+    font-family: 'Noto Sans', sans-serif; /* Assurez-vous que tous les champs et boutons utilisent la même police */
+}
+
+/* Style pour le titre et le logo */
+h1 {
+    font-family: 'Noto Sans', sans-serif; /* Assurez-vous que le titre utilise la même police */
+    font-size: 3rem; /* Taille du titre */
+    color: #003366; /* Bleu marine */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; /* Espacement entre le titre et le formulaire */
+}
+
+/* Logo plus grand */
+.logo {
+    width: 60px; /* Augmenter la taille du logo (auparavant 40px) */
+    height: auto; /* Conserver les proportions */
+}
+
+/* Container pour centrer le formulaire */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espace entre le formulaire et le bouton */
+    align-items: center; /* Centrer tout le contenu */
+    margin-top: -150px; /* Ajouter un peu d'espace en haut */
+    position: sticky;
+    top: 20px; /* Laisser un espace entre le formulaire et le haut de la page */
+    z-index: 10;
+}
+
+/* Main form container */
+form {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Aucune marge entre les champs */
+    padding: 20px; /* Espacement interne */
+    border: 1px solid #d9d9d9; /* Bordure fine autour du formulaire */
+    border-radius: 5px;
+    position: relative; /* Position relative pour que le bouton se positionne par rapport à ce conteneur */
+}
+
+/* Champs de formulaire */
+.input-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.label {
+    width: 120px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input, textarea {
+    flex: 1;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+    width: 100%;
+}
+
+/* Bouton de soumission */
+button {
+    height: 35px;
+    width: 120px;
+    padding: 0px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0078d4; /* Bleu pour le bouton */
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    position: absolute; /* Position absolue pour sortir du bloc de formulaire */
+    bottom: -50px; /* Décalage vers le bas */
+    left: 8%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Centrer parfaitement */
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Résultats */
+.results {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.result-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+    border-left: 5px solid #0078d4;
+}
+
+.result-success {
+    border-left-color: #28a745;
+}
+
+.result-warning {
+    border-left-color: #f44336;
+}
+
+/* Section pour l'affichage de la réponse de l'assistant */
+.assistant-response {
+    width: 100%;  /* Largeur égale à celle du formulaire */
+    max-width: 800px;  /* Même largeur maximale que le formulaire */
+    background-color: transparent;  /* Fond transparent */
+    color: #333;  /* Couleur noire pour le texte */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Affichage vertical pour les résultats sous le texte */
+    gap: 20px;  /* Espacement entre chaque section */
+    margin-top: 60px;
+    border: 1px solid #d9d9d9; /* Bordure fine grise autour de la réponse */
+    border-radius: 5px;  /* Coins arrondis comme pour le formulaire */
+}
+
+.assistant-header {
+    display: flex;
+    align-items: center; /* Alignement vertical centré */
+    gap: 15px; /* Espacement entre l'avatar et le texte */
+}
+
+.assistant-results {
+    display: flex;
+    flex-direction: column;  /* Affichage vertical des résultats */
+    gap: 10px;  /* Espacement entre les résultats */
+}
+/* Avatar */
+.assistant-avatar {
+    width: 60px; /* Taille de l'avatar */
+    height: 60px;
+    border-radius: 50%; /* Rendre l'avatar circulaire */
+    object-fit: cover;
+}
+
+/* Texte associé à l'avatar */
+.assistant-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer verticalement le texte */
+    gap: 2px;  /* Espacement entre chaque élément */
+}
+
+/* Le nom de l'assistant */
+.assistant-name {
+    font-size: 1.0rem; /* Taille normale pour "Assistant Outphish" */
+    font-weight: normal;  /* Pas de gras */
+    color: #333;  /* Texte noir */
+}
+/* Le texte "Aujourd'hui" */
+.assistant-time {
+    font-size: 0.8rem;  /* Texte plus petit */
+    color: #afafaf;  /* Texte noir */
+}
+
+.assistant-you {
+    font-size: 0.8rem;  /* Texte plus petit */
+    color: #333;  /* Texte noir */
+    margin-top: 2px;
+}
+
+.result-success {
+    border-left-color: #28a745;
+}
+
+.result-warning {
+    border-left-color: #f44336;
+}
+
+/* Placeholder pour l'image */
+.image-placeholder {
+    margin-top: 30px; /* Espacement au-dessus de l'image */
+    display: flex;
+    justify-content: center; /* Centrer l'image horizontalement */
+    align-items: center; /* Centrer verticalement si nécessaire */
+    height: 10px; /* Hauteur pour l'espace de l'image */
+    width: 100%; /* Prendre toute la largeur du formulaire */
+}
+
+.image-placeholder img {
+    max-width: 100%; /* Réduit la largeur de l'image à 60% de la largeur du formulaire */
+    height: auto; /* La hauteur s'ajustera proportionnellement */
+}
