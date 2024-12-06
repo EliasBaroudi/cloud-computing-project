@@ -1,38 +1,37 @@
 # Outphish
 
-![Bannière](assets/banner.png)
+![Banner](assets/banner.png)
 
-Une application simple et efficace pour détecter les e-mails de phishing grâce à l'intelligence artificielle.
+A simple and effective application to detect phishing emails using artificial intelligence.
 
-## Fonctionnalités
-- Analyse des e-mails pour détecter les caractéristiques de phishing.
-- Utilisation d'un modèle de régression logistique pour évaluer les risques.
-- Interface utilisateur intuitive pour charger les e-mails.
+## Features
+- Analyze emails to detect phishing characteristics.
+- Use a logistic regression model to assess risks.
+- Intuitive user interface to upload emails.
 
-## Aperçu
-![Aperçu de PhishDetector](assets/screenshot.png)
-
+## Preview
+![Preview of PhishDetector](assets/screenshot.png)
 
 # Installation
 
-You can clone the repository to your local machine and begin the installation process.
-Simply follow the instructions provided in the README.txt file.
+You can clone the repository to your local machine and begin the installation process.  
+Simply follow the instructions provided in the `README.txt` file.
 
-This project is designed to work on Microsoft Azure, but you can also run it locally by following the steps outlined in README.txt. Both methods of usage are detailed in the instructions.
+This project is designed to work on Microsoft Azure, but you can also run it locally by following the steps outlined in `README.txt`. Both usage methods are detailed in the instructions.
 
-## Utilisation
-1. Chargez un e-mail en texte brut ou en format .eml.
-2. Cliquez sur "Envoyer".
-3. Consultez le résultat des prédictions (Une prediction pour le contenu et une autre pour l'éxpediteur)
+## Usage
+1. Upload an email in plain text or `.eml` format.
+2. Click "Submit."
+3. View the prediction results (one prediction for the email content and another for the sender).
 
-## Fonctionnement technique
-- Le modèle est entraîné sur des données d'e-mails étiquetés comme "phishing" ou "légitimes".
-- Caractéristiques utilisées : mots-clés, URL suspectes, longueur de l'e-mail, etc.
-- Bibliothèque utilisée : `scikit-learn`.
-- Algorithme : Régression logistique pour la classification binaire.
+## Technical Overview
+- The model is trained on labeled datasets of emails as "phishing" or "legitimate."
+- Features used: keywords, suspicious URLs, email length, etc.
+- Library used: `scikit-learn`.
+- Algorithm: Logistic regression for binary classification.
 
-## Jeux de données
-Les données d'entraînement proviennent de :
+## Datasets
+The training data comes from:
 - [Kaggle - Phishing Websites Dataset](https://www.kaggle.com/).
-- Données personnalisées générées via des e-mails simulés.
-Ces données peuvent être retrouvées dans les fichiers du projet
+- Custom data generated from simulated emails.  
+These datasets can be found within the project files.
