@@ -30,7 +30,7 @@ def call_az_functions(text: EmailContent):
             "body": f"{email_body}"
         }
         
-        url = '' ## URL de l'api AZ Functions
+        url = 'http://localhost:7071/api/outphish_anlyze' ## URL de l'api AZ Functions
 
         # Lancer la requete
         response = requests.post(url, json=data)
