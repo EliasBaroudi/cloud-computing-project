@@ -10,7 +10,8 @@ A simple and effective application to detect phishing emails using artificial in
 - Intuitive user interface to upload emails.
 
 ## Preview
-![Preview of PhishDetector](assets/screenshot.png)
+![Preview of PhishDetector](assets/main.png)
+![Preview of Result](assets/results.png)
 
 # Installation
 
