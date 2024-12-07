@@ -33,4 +33,3 @@ This project is designed to work on Microsoft Azure, but you can also run it loc
 ## Datasets
 The training data comes from:
 - [Kaggle - Phishing Websites Dataset](https://www.kaggle.com/).
-These datasets can be found within the project files.
