@@ -1,13 +1,3 @@
-fastapi
-uvicorn
-gunicorn
-jinja2
-python-multipart
-pydantic
-azure-ai-textanalytics
-azure-identity
-azureml-sdk
-scikit-learn
-pandas
-joblib
 requests
+joblib
+scikit-learn
