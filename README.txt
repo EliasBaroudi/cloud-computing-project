@@ -28,7 +28,7 @@ Commands in terminal:
 
 
 main.py :
-	url: '' : Enter the Azure Functions API URL.
+	url = 'http://localhost:7071/api/outphish_anlyze' : Ensure that the port used in url is the correct one
 
 Commands in another terminal :
 	
@@ -59,7 +59,7 @@ static/js/main.js:
 	Change the URL at line 12: replace the local URL with the URL of the deployed web application.
 
 main.py:
-	url: '' : Enter the Azure Functions API URL provided upon deployment.
+	url = 'http://localhost:7071/api/outphish_anlyze' : Update the URL to the one provided for the Azure Functions API upon deployment.
 	Create a ZIP file containing: main.py, /static, /templates, requirements.txt.
 	Deploy the ZIP to Azure Web App.
 
