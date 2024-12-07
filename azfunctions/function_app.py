@@ -6,9 +6,9 @@ from azure.functions import FunctionApp
 
 app = FunctionApp()
 
-@app.function_name(name="MyFunction")
-@app.route(route="example", methods=["POST"]) 
-def example_function(req: func.HttpRequest) -> func.HttpResponse:
+@app.function_name(name="outphish_analyze")
+@app.route(route="outphish_anlyze", methods=["POST"]) 
+def analze_function(req: func.HttpRequest) -> func.HttpResponse:
     try:
         # Récupérer les données JSON depuis le corps de la requête
         body = req.get_json()
