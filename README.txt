@@ -44,7 +44,7 @@ Commands in terminal :
 
 ### Deployment Instructions for Azure ###
 
-sdk.py:
+sdk_azure.py:
 	Enter the credentials and update the path for the Azure Storage account.
 	Deploy the models in blobs on Azure.
 
