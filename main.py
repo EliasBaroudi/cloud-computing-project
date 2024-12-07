@@ -18,7 +18,7 @@ class EmailContent(BaseModel):
     sender: str 
     body: str
 
-def analyze_text_with_cognitive_service(text: EmailContent):
+def call_az_functions(text: EmailContent):
     try:
         email_from = text.sender
         email_subject = text.subject
@@ -49,12 +49,9 @@ def analyze_text_with_cognitive_service(text: EmailContent):
 @app.post("/api/analyze")
 async def analyze_email(email: EmailContent):
     # Appeler l'API Cognitive pour prédire si l'email est du phishing
-    result = analyze_text_with_cognitive_service(email)
-    print(result)
+    result = call_az_functions(email)
     
     # Analyse de la réponse de l'API
-    print(f"from_status face à {result[1]}")
-    print(f"body_status face à {result[4]}")
     from_status = "Légitime" if result[1] == '0' else "Suspect"
     body_status = "Légitime" if result[4] == '0' else "Suspect"
     
